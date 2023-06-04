@@ -1,0 +1,20 @@
+.container {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+input, button {
+    margin-bottom: 10px;
+}
+.ondestek-messenger {
+    width: 25%;
+    height: 37%;
+    position: fixed;
+    padding: 5px ;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    border: 3px black solid;
+  }

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iclal's Blog Posts</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Popup container - can be anything you want */
+        .popup {
+            width: 125px;
+            height: 20px;
+            text-align: center;
+            align-items: center;
+            border: 3px black solid;
+            border-radius: 30px;
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <center>
+            <img src="C:\Users\a\Downloads\sosyal medya.jpeg" alt="bilinçsiz medya kullanımı"
+                title="bilinçsiz medya kullanımı" width="240" height="240">
+            <h1>Bilinçsiz Sosyal Medya Kulanımı</h1>
+            <p>Herkese merhaba bugün sizlerle önemli bir konu hakkında konuşacağız.
+                Çağımız sorunlarından olan sosyal medya kullanımı.
+                Bu durum dikkat edilmediği takdirde oldukça tehlikeli boyutlarda olabilir özellikle bir de küçük
+                yaşlardaki çocukların sosyal medya ile olan yakınlığı daha da korkunç bir boyutta bu hususta bilinçsiz
+                ebeveyn olmak var tabii. Bu başka bir günün blog yazısı olacak. Özellikle sosyal medyayı yanlış
+                kullandığımızda
+                olabileceklerden bahsetmek istiyorum.
+                Reels kaydırmak her ne kadar hoşumuza gitse de hem çok zamanımızı almakta hem de her reels
+                kaydırdığımızda dopamin salgımız artıyor(bu konudaki teknik bilgileri tıpçılarımıza bırakalım. )
+                ve dopamin fazlalığı bizde bağımlılığa yol açıyor bu sebeple saatlerce instagramda ya da tiktokta
+                vakit geçirebiliyoruz zamanın hiç farkında olmadan. Şimdi bana diyebilirsiniz ki egzersiz yaparken,
+                müzik dinlerken, meditasyon yaparken hatta uyurken bile vücudumuz dopamin salgılar.
+                Ama benim kast ettiğim dopaminin vücudumuzda kontrolsüz bir şekilde fazla salgılanması ve buna sebep
+                bizim sanal medya ile olan yakınlığımızdan kaynaklanabiliyor.
+                Tabii bir kesim insan grubu var ki onlar ise sadece ben bu uygulamalardan kendime ne katabilirim
+                gözüyle yaklaşıyorlar. Kazanalar onlar bence kendisine uygun kanalları, sayfaları takip
+                ederek kişisel gelişimine katkıda bulunuyor hem de ücretsiz bir şekilde. Takdir ediyorum açıkçası
+                öyle olanları çünkü ben bunu her zaman başarabilenlerden değilim. Fazla uzun bir blog yazısı yazarak
+                okuyucularımı da sıkmak değil niyetim. Bu yüzden uzunluk ve sıkıcılıktan olabildiğince kaçınıyorum.
+                Son olarak bilinçsiz sosyal medya kullanımında oluşabilecek birkaç husustan daha bahsedip bu yazımı
+                noktalayacağım. Sosyal medyadaki asparagas haberlerden bahsetmek istiyorum gerçekten çığ gibi büyüyen
+                bir sorun okuduğumuz, gördüğümüz ya da duyduğumuz her habere inanmamalıyız o haberin doğruluğunu
+                sorgulamalıyız ve bunu yapmadan o haberlerin yayılmasına müsaade etmemeliyiz.
+                (bu söylediğim günümüz şartlarında pek mümkün değil farkındayım değerli okuyucular ben yine de doğru
+                bildiğimi yazmak istedim. ) Çünkü bu o yalan haberi okuyacak olan diğer insanların moralini de
+                bozabilir ya da boşa gaza gelmelerine sebebiyet verebilir. Asla duyduğumuz haberlerin doğruluğundan
+                emin olmadan başka yerlerde paylaşmamalıyız. Yazımın sonuna gelmiş bulunmaktayız değerli
+                okuyucular vaktinizi ayırıp okuduğunuz için teşekkür ederim.
+                Dilerseniz bu konudaki görüş ve önerilerinize açığım bana mesaj gönderebilirsiniz.
+                Hepinize mutlu günler dilerim en kısa zamanda görüşmek dileğiyle… </p>
+        </center>
+    </nav>
+    <div>
+        <div class="ondestek-messenger">
+            <div class="ondestek-messenger-head">
+                <a class="ondestek-messenger-back"><span></span></a>
+                <a class="ondestek-messenger-down" style="display: none;"><span></span>
+                </a>
+                <div class="ondestek-messenger-title" lang="widget.offline_message">Lütfen mesaj bırakın!
+
+                </div>
+            </div>
+            <div class="ondestek-messenger-body">
+                <div class="ondestek-windows">
+                    <div class="ondestek-offline-window">
+                        <div class="ondestek-messenger-offline-message" lang="widget.offline_message_text"> En kısa
+                            zamanda size dönüş yapacağız.</div>
+                        <div class="ondestek-messenger-offline-result"></div>
+                        <form name="ondestek-messenger-offline-form" class="ondestek-messenger-offline-form"><input
+                                type="hidden" name="token" value=""><input type="hidden" name="page"
+                                value="https://ondestek.com/"><label for="ondestek_fullname" lang="widget.fullname">Ad
+                                Soyad</label> <span class="required">*</span>
+                            <div class="form-group"><input type="text" name="ondestek_fullname" id="ondestek_fullname">
+                            </div><label for="ondestek_email" lang="widget.email">E-posta Adresi</label> <span
+                                class="required">*</span>
+                            <div class="form-group"><input type="text" name="ondestek_email" id="ondestek_email"></div>
+                            <label for="ondestek_phone" lang="widget.phone">Telefon</label>
+                            <div class="form-group"><input type="text" name="ondestek_phone" id="ondestek_phone"></div>
+                            <label for="ondestek_message" lang="widget.your_message">Mesajınız</label> <span
+                                class="required">*</span>
+                            <div class="form-group"><textarea name="ondestek_message" id="ondestek_message"
+                                    style="height:75px; resize: none;"></textarea>
+                            </div>
+                            <div class="popup" onclick="myFunction()">Mesaj Gönder!
+                                <span class="popuptext" id="myPopup">Mesajınızı aldım! Teşekkür ederim. </span>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+
+</body>
+
+</html>
